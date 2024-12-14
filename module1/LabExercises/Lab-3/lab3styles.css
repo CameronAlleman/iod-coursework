@@ -1,0 +1,73 @@
+    body { 
+        font-family: sans-serif; 
+        margin: 0; }
+    .container { 
+        display: flex; 
+        min-height:
+100vh; align-items: stretch; }
+        .column { 
+                border-style: groove;
+                border-color: "black";
+                background: goldenrod;
+                display:flex; 
+                flex-direction: column; 
+                justify-content: center; 
+                align-items: center; 
+                flex: 1; 
+            }
+
+    
+    .button {
+        background-color: #04aa6d; /* Green */
+        border: none;
+        color: black;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin:4px 2px;
+        cursor: pointer;
+}
+    .button1 {border-radius: 16px /*button to control first column with rooster*/
+}
+    .button1:hover {
+        background-color:#04aa6d;
+        color: white
+}
+    .button2 {border-radius: 16px; /*button to control second column with chicks*/
+}
+    .button2:hover {
+        background-color:rgb(236, 221, 152);
+        color: white
+}
+    .picture-border {
+        border: 5px solid black;
+        border-radius: 10px
+    }
+    .table, th, td {
+        border: 4px solid black;
+        width: 100%;
+        table-layout: fixed;
+        background-color:rgb(219, 217, 88);
+        border-radius: 10px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 40px;
+        cursor: pointer;
+        padding: 20px;
+        opacity: .7;
+    }
+    .th:hover {
+        background-color:beige;
+        color: white;
+    }
+    .title {
+        background-color: #ec9716;
+        border: 6px solid black;
+        text-decoration: none;
+        color: Black;
+        font-size: 60px;
+        text-align: center;
+
+    }

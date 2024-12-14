@@ -1,0 +1,16 @@
+        function myFunction1() {
+            document.getElementById("heading1").style.color = "white";
+            document.getElementById("colunm1").style.backgroundColor = "black";
+            document.getElementById("heading1").style.fontSize = "60px";
+            document.getElementById("h1details").style.fontSize = "45px"; 
+            document.getElementById("h1details").style.color = "white";    
+        }
+        function myFunction2() {           
+            document.getElementById("heading2").style.color = "white";
+            document.getElementById("heading2").style.fontSize = "60px";
+            document.getElementById("column2").style.backgroundColor = "black";
+            document.getElementById("heading2").style.color = "white";
+            document.getElementById("h2details").style.fontSize = "45px";
+            document.getElementById("h2details").style.color = "white";
+        }
+           

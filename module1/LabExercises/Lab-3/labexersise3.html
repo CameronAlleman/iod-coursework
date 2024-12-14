@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab3styles.css">
+    <title>Alleman Poultry Farm</title>
+    <link rel="icon" type="image/x-icon" href="\Lab-3\hellochicken.jpg">  <!--Favicon-->
+</head>
+<body>
+    <p>
+        <h1 class="title">Alleman Poultry Farm</h1>
+    </p>   
+    <table class="table background" id="quickmenu" > <!--add links to other pages-->
+        <tr>
+            <th class="th"> <a href="\Lab-3\labexersise3.html">Home</a></th> <!--return user to original website-->
+            <th class="th"> <a href="\Lab-3\Catalog.html">Catalog</a></th> <!--reference catalog external sheet-->
+            <th class="th"> <a href="\Lab-3\Sales.html">Sales</a></th> <!--reference sales page-->
+            <th class="th"> <a href="\Lab-3\Contact.html">Contact Us</a></th> <!--Bring up form to fill in-->
+        </tr>
+    </table>
+    <div class="container background">
+        <div class="column" id="colunm1">
+            <h1 id="heading1">Full-Size Chickens</h1>
+            <p id="h1details">Minimum order of 5</p>
+            <button class= "button button1" 
+            onclick="myFunction1()">Change Me</button>         
+            <img src="\Lab-3\rooster.jpg" 
+            alt="Rooster" class= "picture-border"
+            width="300px"> <!--auto scales with only 1 specified size--> 
+        </div>
+        <div class="column" id="column2">
+            <h1 id="heading2">One Day Old Chicks</h1>
+            <p id="h2details">Minimum order of 10</p>
+            <button class="button button2"
+            onclick="myFunction2()">Change Me</button>
+            <img src="\Lab-3\chickswithglasses.jpg" alt="Baby Chickens" class="picture-border" 
+            width="300px">
+        </div>
+    </div>
+    <script src="\Lab-3\scripts"> 
+    </script>
+</body>
+<footer></footer>
+</html>
