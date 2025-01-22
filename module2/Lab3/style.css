@@ -1,0 +1,267 @@
+.body {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 50px;
+    margin-top:10px;
+    position: fixed;
+    width:100%;
+    z-index: 1000;
+
+}
+
+.headertitle3 {
+    color:rgb(40, 40, 228);
+    margin-top: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 40px;
+}
+.headertitle1 {
+    color:rgb(40, 40, 228);
+    margin-top: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.headertitle1-link {
+    color: rgb(40, 40, 228);
+    text-decoration: none;
+    
+}
+
+.headertitle1-visited {
+    color: black;
+}
+
+.headertitle2 {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    margin-top:-5px;    
+}
+
+
+
+.headertitle2-link {
+    color: black;
+    text-decoration: none;
+    font-size: 8px;
+    
+}
+
+.headertitle2-visited {
+    color: black;
+}
+
+
+
+.navlist {
+
+    height:20px;
+    /* justify-content:left; */
+    display:flex;
+    margin-top: 80px;
+    flex-direction: row;
+    background-color: rgb(56, 54, 54);    
+    font-size: 16px;
+    font-weight: bold;
+    position:fixed;
+    width:100%;
+    align-items: center;
+    /* top:0; */
+    /* left:0; */
+
+}
+
+.navheader {
+    text-decoration: none;
+    list-style-type: none;
+    color:white;
+}
+
+.quickmenu:link {
+    color: white;
+    text-decoration: none;
+    }
+
+.quickmenu:visited {
+    color: white;
+}
+
+.quickmenu:hover {
+    color:gray;
+}
+
+.dropdown-content {
+    display:none;
+    flex-direction: column;
+    width:100%;
+    position:absolute;
+    align-content: flex-start;
+    
+}
+
+
+#dropdown {
+    border-top: 5px solid rgb(40, 40, 228);
+    padding-top:0px;
+    position:absolute;
+    width: 300px;
+    text-decoration: none;
+    list-style-type:none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    background-color:rgb(56, 54, 54) ;
+   
+    max-height: 60%;
+    min-width:150px;
+    overflow-x: hidden;
+    /* top:100%; */
+    /* left:81%; */
+}
+
+.dropdown-content > div {
+    display:flex;
+    flex-direction: column;   
+
+    
+}
+.dropmenu {
+    text-decoration:none;
+    list-style-type:none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    background-color:rgb(56, 54, 54);
+    padding:10px;
+    
+}
+
+.dropmenu:visited {
+    color: white;
+}
+
+.dropmenu:hover {
+    color:gray;
+}
+
+.heading {
+    color: black;
+    align-content: flex-start;
+    text-decoration: underline rgb(38, 38, 231);
+}
+
+.title {
+    color:gray;
+    display: relative;
+    text-decoration: none;
+    text-align: center;
+    font-size: 10px;
+}
+
+.dropmenu-column1
+.dropmenu-column2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    flex-wrap: nowrap;
+    
+    
+}
+
+.dropmenu-column1 { 
+    align-content: flex-start;
+    text-align: left;
+
+}
+
+.dropmenu-column2 {
+    align-content: flex-end;
+    text-align: left;
+}
+
+.container {
+    width:300px;
+    flex-direction:row;
+}
+
+.button {
+    position:relative;
+}
+
+.add-container1 {
+    background-color: black;
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-right:35%;
+    height:450px;
+    position:relative;
+    top:150px;
+}
+
+.article-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footballpicture {
+     max-width:100%;
+     height:auto;
+
+}
+
+#sportsarticle {
+    display:flex;
+    flex-direction: column;
+}
+
+
+.column1 {
+    align-content: flex-start;
+    text-align: left;
+    width:80%;
+    color: black;
+}
+
+.column2 {
+    justify-content: flex-end;
+    text-align: left;
+    width:30%;
+    list-style-type: none;
+    border-left: 2px solid rgb(56, 54, 54);
+    margin-left: 20px;
+}
+
+.headline-columns {
+    display:flex;
+    margin-left:30%;
+    margin-right:30%;
+    position:relative;
+    flex-direction:row;
+    text-align:baseline;
+    margin-top:200px;
+
+}
+
+.headline-list {
+    text-decoration:none;
+    list-style-type: none;
+}
+
+.headline-title {
+    color:black;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left:35px;
+}

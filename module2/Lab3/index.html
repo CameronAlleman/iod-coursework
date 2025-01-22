@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Advertiser | Lafayette, Louisiana</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="body">
+    <header class="header"> <!--Heading container-->
+        <div>
+            <div><a href="https://classifieds.gannettclassifieds.com/marketplace/lda" class="headertitle1">Marketplace</a></div>
+            <div><a href="https://classifieds.gannettclassifieds.com/marketplace/lda" class="headertitle2">Search For & Place Classifieds</a></div> <!---->
+        </div>
+        <div>
+            <p><a href="https://www.theadvertiser.com/" class="headertitle3">daily advertiser</a></p><!-- url to homepage-->
+        </div>
+        <div>
+            <div><a href="https://subscribe.theadvertiser.com/" class="headertitle1">Subscribe Now</a></div><!---->
+            <div><a href="https://subscribe.theadvertiser.com/" class="headertitle2">10 &cent for 1 month</a></div>   
+        </div>
+        </div>
+    </header>
+    <nav>
+        <div>
+            <ul class="navlist navheader">
+                <li class=""><a href="https://www.theadvertiser.com/news/" class="quickmenu">News</a></li>
+                <li class=""><a href="https://www.theadvertiser.com/sports/" class="quickmenu">Sports</a></li><!---->
+                <li class=""><a href="https://www.theadvertiser.com/business/" class="quickmenu">Business</a></li><!---->
+                <li class=""><a href="https://www.theadvertiser.com/living/" class="quickmenu">Living</a></li><!---->
+                <li class=""><a href="https://www.theadvertiser.com/things-to-do/" class="quickmenu">Things To Do</a></li><!---->
+                <li class=""><a href="https://www.theadvertiser.com/advertise/" class="quickmenu">Advertise</a></li><!---->
+                <li class=""><a href="https://www.theadvertiser.com/obituaries/" class="quickmenu">Obituaries</a></li><!---->
+                <li class=""><a href="https://www.theadvertiser.com/enewspaper/" class="quickmenu">eNewspaper</a></li><!---->
+                <li class=""><a href="https://www.theadvertiser.com/legals/" class="quickmenu">Legals</a></li><!---->
+                <li class="dropdown">
+                    <button class="button" onclick="toggleDropdown()">^</button>
+                         <div class="dropdown-content" id="dropdown">
+                            <h1 class="title">ONLY AT THE ADVERTISER</h1> <!--dropdown menu 1st heading, no redirect url-->
+                            <div id="container1" class="container">
+                                <div class="dropmenu-column1">
+                                    <a href="https://data.theadvertiser.com/" class="dropmenu">Data Central</a>
+                                    <a href="https://puzzles.usatoday.com/" class="dropmenu">Crosswords</a>
+                                    <a href="https://www.theadvertiser.com/go-comics/" class="dropmenu">Comics</a>
+                                    <a href="https://user.theadvertiser.com/user/enewspaper" class="dropmenu">eNewspaper</a>
+                                    <a href="https://profile.theadvertiser.com/newsletters/manage/" class="dropmenu">Newsletters</a>
+                                    <a href="https://theadvertiser.newspapers.com/" class="dropmenu">Archives</a>
+                                    <a href="https://www.theadvertiser.com/weather/" class="dropmenu">Weather</a>
+                                </div>
+                                <div class="dropmenu-column2 ">
+                                    <a href="https://www.theadvertiser.com/contests/" class="dropmenu">Contests</a>
+                                    <a href="https://www.theadvertiser.com/obituaries" class="dropmenu">Obituaries</a>
+                                    <a href="https://www.usatoday.com/horoscopes/" class="dropmenu">Horoscopes</a>
+                                    <a href="https://www.usatoday.com/lottery" class="dropmenu">Lottery</a>
+                                    <a href="https://www.theadvertiser.com/for-subscribers/" class="dropmenu">For Subscribers</a>
+                                    <a href="https://www.southernkitchen.com/" class="dropmenu">Southern Kitchen</a>
+                                </div>
+                            </div>
+                        <div>
+                            <h1 class="title">MarketPlace</h1> <!--second heading, no redirect url-->
+                            <div class="dropmenu-column1">
+                                <a href="https://www.theadvertiser.com/marketplace/jobs/" class="dropmenu">Local Job Listings / <br>Hire Now</a>
+                                <a href="https://www.theadvertiser.com/marketplace/cars/" class="dropmenu">Cars</a>
+                                <a href="https://www.theadvertiser.com/marketplace/real-estate/" class="dropmenu">Homes</a>
+                            </div>
+                            <div class="dropmenu-column2">
+                                <a href="https://local.theadvertiser.com/" class="dropmenu">Business Directory</a>
+                                <a href="https://classifieds.theadvertiser.com/" class="dropmenu">Classifieds</a>
+                                <a href="https://cm.theadvertiser.com/advertise-with-us/?cid=Web_LiQ_Network_AdvertiseWithUs_AdvertiseInquiry&publication=the_daily_advertiser&utm_source=local_publication&utm_medium=menu&utm_campaign=advertise_with_us" class="dropmenu">Advertise Your Business</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h1><a href="https://www.theadvertiser.com/news/" class="heading">News</h1> <!--third heading, has anchor tag-->
+                            <a href="https://www.theadvertiser.com/news/elections/" class="dropmenu">Election</a>
+                            <a href="https://www.theadvertiser.com/news/crime/" class="dropmenu">Crime</a>
+                            <a href="https://www.theadvertiser.com/news/local/" class="dropmenu">Local</a>
+                            <a href="https://www.theadvertiser.com/news/louisiana/" class="dropmenu">Louisiana</a>
+                            <a href="https://static.theadvertiser.com/lafayette-civic-cup-award-nomination/" class="dropmenu">Lafayette Civic Cup <br>Award Nomination</a>
+                        </div>
+                        <div>
+                            <h1><a href="https://www.theadvertiser.com/sports/" class="heading">Sports</h1>
+                            <a href="https://www.theadvertiser.com/sports/high-schools/" class="dropmenu">High Schools</a>
+                            <a href="https://www.theadvertiser.com/sports/lsu/" class="dropmenu">LSU</a>
+                            <a href="https://www.theadvertiser.com/sports/saints/" class="dropmenu">Saints</a>
+                            <a href="https://www.theadvertiser.com/sports/ul/" class="dropmenu">UL</a>
+                            <a href="https://www.theadvertiser.com/sports/sports-betting/" class="dropmenu">SportsbookWire</a>
+                            <a href="https://mmajunkie.usatoday.com/" class="dropmenu">MMA Junkie</a>
+                            <a href="https://golfweek.com/" class="dropmenu">Golfweek</a>
+                            <a href="https://www.usatoday.com/sports/" class="dropmenu">USA Today Sports</a>
+                        </div>
+                        <div>
+                            <h1><a href="https://www.theadvertiser.com/business/" class="heading">Business</h1>
+                        </div>
+                        <div>
+                            <h1><a href="https://www.theadvertiser.com/life/" class="heading">Living</h1>
+                        </div>
+                        <div>
+                            <h1><a href="https://www.theadvertiser.com/things-to-do/" class="heading">Things To DO</h1>
+                            <a href="https://www.theadvertiser.com/things-to-do/food/" class="dropmenu">Food</a>
+                            <a href="https://www.theadvertiser.com/things-to-do/music/" class="dropmenu">Music</a>
+                            <a href="https://events.theadvertiser.com/" class="dropmenu">Events</a>
+                        </div>
+                        <div>
+                            <h1><a href="https://www.theadvertiser.com/opinion/" class="heading">Opinion</h1>
+                            <a href="https://static.theadvertiser.com/submitletter/" class="dropmenu">Submit a Letter</a>
+                        </div>
+                        <div>
+                            <h1><a href="https://www.theadvertiser.com/public-notices" class="heading">Legals</h1>
+                            <a href="https://louisianapublicnotice.com/" class="dropmenu">Search statewide<br>public notices</a>
+                        </div>
+                        <div>
+                            <h1><a href="https://www.theadvertiser.com/contributor-content/" class="heading">Contributor Content</a></h1>
+                        </div>
+                    </div>
+            </ul>  
+        
+        </div>
+
+    </nav>
+    <div class="add-container1"><!--add container-->
+        <p>Insert Adds Here</p>
+    </div>
+    <div class="headline-columns">
+        <div id="sportsarticle" class="column1">
+                    <img class="footballpicture" src="https://media.istockphoto.com/id/1355086328/photo/american-football-championship-teams-ready-professional-players-aggressive-face-off-ready-for.jpg?s=2048x2048&w=is&k=20&c=9PaBBpTPjTL5_Le8zudtwLvfF6ncpmNBgi6-j1rl74k=" alt="football">
+            <div class="sports-container"><!--sports headline-->
+                    <h1 class="article-title">Lorem Ipsun</h1>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. 
+                   Consectetur curabitur fermentum leo praesent convallis torquent leo adipiscing.
+                    Mattis id tortor neque penatibus habitasse, hac nullam accumsan non? Dui justo habitasse a 
+                    bibendum praesent maximus pretium. Facilisi habitasse etiam ligula congue consectetur facilisis 
+                    cras auctor eget. Tempor torquent pharetra montes leo vivamus curabitur faucibus augue quam. 
+                    Parturient neque eros dictumst eu molestie porta donec eget aliquam.
+                    </p>
+            
+                </div>
+            </div>
+
+        <div class="column2">
+                <h1 class="headline-title">Top Headlines</h1>
+                <ul class="headline-list">
+                    <li>Lorem ipsum odor amet, consectetuer adipiscing elit. Efficitur felis himenaeos fermentum 
+                    metus hendrerit pharetra dictum euismod</li>
+                    <li>Porta mauris platea mattis vivamus placerat nibh pulvinar nisi. Sed auctor odio consectetur 
+                    augue semper felis cubilia placerat</li>
+                    <li>Aliquam quam arcu primis et tristique nunc purus tellus. Semper interdum adipiscing torquent 
+                    in hac maximus vehicula.</li>
+                    <li>Lorem ipsum odor amet, consectetuer adipiscing elit. Dictumst varius convallis fermentum 
+                    dapibus ultrices praesent cubilia porttitor</li>
+                </ul>
+            
+        </div>
+    </div>
+</body>
+<script src="newspaper.js"></script>
+</html>
