@@ -15,14 +15,14 @@
 }
 
 .headertitle3 {
-    color:rgb(40, 40, 228);
+    color:rgb(35, 145, 235);
     margin-top: 10px;
     font-weight: 600;
     text-decoration: none;
     font-size: 40px;
 }
 .headertitle1 {
-    color:rgb(40, 40, 228);
+    color:rgb(35, 145, 235);
     margin-top: 10px;
     font-weight: 600;
     text-decoration: none;
@@ -31,7 +31,7 @@
 }
 
 .headertitle1-link {
-    color: rgb(40, 40, 228);
+    color: rgb(35, 145, 235);
     text-decoration: none;
     
 }
@@ -106,7 +106,7 @@
 
 
 #dropdown {
-    border-top: 5px solid rgb(40, 40, 228);
+    border-top: 5px solid rgb(35, 145, 235);
     text-decoration: none;
     display:none ;
     left:87vw;
@@ -134,6 +134,7 @@
     background-color:rgb(56, 54, 54);
     padding:10px;
     text-align: center;
+    max-width: 190px;
     
 }
 
@@ -148,7 +149,7 @@
 .heading {
     color: black;
     align-content: center;
-    text-decoration: underline rgb(38, 38, 231);
+    text-decoration: underline rgb(35, 145, 235);
     text-align:center;
     
 }
@@ -224,7 +225,7 @@
 }
 
 .sports-container {
-    width:200px;
+    max-width:200px;
     min-width: 50px;
     flex-direction:row; 
     display:flex;
@@ -266,65 +267,146 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-left: 35vw;
-    margin-right:35vw;
+    margin-left: 10vw;
+    margin-right:10vw;
     height:250px;
     position:relative;
-    top:60px;
+}
+
+.add-container2 {
+    background-color: black;
+    color:white;
+    font-size: 12px;
+    height:800px;
+    width:15vw;
+    padding-right:10vw;
 }
 
 .article-title {
     font-size: 16px;
     font-weight: bold;
+    text-align: center;
+}
+
+.nohyperlink {
+    font-size: 14px;
+    text-decoration: none;
+}
+.nohyperlink:link {
+    text-decoration: none;
+    color:black;
+
+}
+
+.nohyperlink:visited {
+    text-decoration: none;
+    color:black;
+
 }
 
 .footballpicture {
      max-width:100%;
      height:auto;
-
+     margin-top: -140px;
 }
-
-#sportsarticle {
-    display:flex;
-    flex-direction: column;
-}
-
 
 .column1 {
     align-content: flex-start;
     text-align: left;
-    width:80vw;
     color: black;
+
 }
 
 .column2 {
     justify-content: flex-end;
     text-align: left;
-    width:30vw;
     list-style-type: none;
     border-left: 2px solid rgb(56, 54, 54);
     margin-left: 20px;
+    margin-top:20px;
+    height:600px;
 }
 
 .headline-columns {
     display:flex;
-    margin-left:30vw;
-    margin-right:30vw;
-    position:relative;
+    margin-left:10vw;
     flex-direction:row;
-    text-align:baseline;
     margin-top:200px;
 
 }
 
 .headline-list {
     text-decoration:none;
-    list-style-type: none;
 }
 
 .headline-title {
     color:black;
     font-size: 18px;
     font-weight: bolder;
-    margin-left:35px;
+    margin-left:10px;
+    border-bottom: 2px solid black;
+}
+
+.news-container {
+    width:80vw;
+    min-width: 50px;
+    flex-direction:row;
+    text-align: left;
+    height:400px;
+}
+
+p {
+width:40vw;
+text-align: center;
+margin:none;
+padding:none;
+}
+
+.storybook {
+    display:flex;
+    flex-direction: row;
+
+}
+
+.sb_1 {
+    width:170px;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    padding:10px;
+
+}
+
+.sb_t {
+    font-size: 12px;
+}
+
+.sb_2 {
+    width:170px;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    padding:10px;
+}
+
+
+.sb_3 {
+    width:170px;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    padding:10px;
+}
+
+.videotitle {
+    color:rgb(51, 50, 50);
+    font-size:25px;
+}
+
+.video {
+    border-top: 4px solid rgb(51, 50, 50);
+    padding-top:40px;
+    margin-top:-33px;
+    margin-left:150px;
+    
 }
