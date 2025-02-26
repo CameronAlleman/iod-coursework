@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eCharts</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <canvas id="myChart"></canvas>
+    </div>
+    <!-- Prepare a DOM with a defined width and height for ECharts -->
+    <div id="main" style="width: 900px; height: 600px"></div>
+    <script type="text/javascript">
+      // Specify the configuration items and data for the chart
+      let options = {
+        title: { text: "Fake Store Categories" },
+        xAxis: {
+          data: ["Category 1", "Category 2", "Category 3", "Category 4"],
+        },
+        yAxis: {},
+        series: [
+          {
+            name: "# products",
+            type: "bar",
+            data: [0, 1, 5, 2],
+          },
+        ],
+      };
+      fetch("https://fakestoreapi.com/products")
+        .then((res) => res.json())
+        .then((json) => console.log(json));
+      const categoryInfo = products.reduce((total, product) => {
+        const category = product.category;
+        const currentCount = total[category] || 0;
+        const updatedCount = currentCount + 1;
+
+        total[category] = updatedCount;
+
+        return total;
+      }, {});
+
+      console.log({ categoryInfo });
+      // category1: 1
+      // count: 1
+      // use this JSON to find and set correct option data for the chart
+    </script>
+    <script>
+      const ctx = document.getElementById("myChart");
+
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["Category 1", "Category 2", "Category 3", "Category 4"],
+          datasets: [
+            {
+              name: "# products",
+              type: "bar",
+              data: [0, 1, 5, 2],
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
