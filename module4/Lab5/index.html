@@ -1,0 +1,71 @@
+<html>
+ <head>
+  <title>Luxon DateTime Formatting</title>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.5.0/build/global/luxon.min.js">
+ </script> <!-- reference Luxon library -->
+ </head>
+ <body>
+ <h2>Luxon Date</h2>
+ <!-- container for Luxon output -->
+ <div id="displayLuxon"></div>
+ <script>
+  const DateTime = luxon.DateTime;
+
+function birthday(daysUntil){                  //problem1
+    const now = DateTime.now();
+    const nextBday = DateTime.fromISO(daysUntil);
+    let days = nextBday.diff(now, 'days').days;
+    if (days < 0) {
+                const nextYearBday = nextBday.plus({ years: 1 });
+                days = nextYearBday.diff(now, 'days').days;
+            }
+            return Math.ceil(days);
+}
+
+  function birthday2(daysSince) {         // problem 2
+  const now = DateTime.now();
+  const born = DateTime.fromISO(daysSince);
+  let age = now.diff(born, ['years','months','days']);
+  console.log(age);
+  
+
+  return `Age: ${Math.floor(age.years)} years, ${Math.floor(age.months)} months, ${Math.floor(age.days)} days`;
+}
+
+function closestDate(date1, date2) {      //problem3
+  const now = DateTime.now()
+  let input1 = DateTime.fromISO(date1);
+  let input2 = DateTime.fromISO(date2);
+  let result1 = now - input1;
+  let result2 = now - input2;
+  console.log(result1);
+  console.log(result2);
+    if (result1 >= result2) {
+      return `${date2}`;
+      }
+      return `${date1}`;
+}
+
+function dateOrder(date1, date2) {   // problem 4
+  const now = DateTime.now();
+  let input1 = DateTime.fromISO(date1);
+  let input2 = DateTime.fromISO(date2);
+  if (date1 < date2) {
+    return `${date1} comes before ${date2}`;
+    }
+    return `${date2} comes before ${date1}`
+}
+
+function londonTime(){          //problem 5 
+  const now = DateTime.now();
+  let londonTime = now.setZone('Europe/London');
+  return londonTime.toString();
+}
+console.log(birthday("2025-12-12"));
+console.log(birthday2("1992-12-12"));
+console.log(closestDate("1950-12-12","1992-12-12"));
+console.log(dateOrder("2042-12-12","2052-12-12"));
+console.log(londonTime());
+ </script>
+ </body>
+ </html>

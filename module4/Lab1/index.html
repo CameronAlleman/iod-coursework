@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div id="calculator" class="calculator">
+            <div >
+                <div id="result" class="display"> <!--div for result of calculation -->
+                    Results                
+                </div>
+                <div>
+                    <div> <!--div for result of input1 -->                
+                        <form onsubmit="return false;">           
+                            <label for="box1">Value:</label>
+                            <input type="number" id="input1" placeholder="Enter Number Here">
+                        </form>
+                    </div>
+                    <div>
+                        <form id="operatorselection" class="operator" onsubmit="return false;">
+                            <input type="radio" id="add" name="operator"  value="+">
+                            <label for="add">+</label><br>
+                            <input type="radio" id="subtract" name="operator"  value="-">
+                            <label for="add">-</label><br>
+                            <input type="radio" id="multiply" name="operator"  value="*">
+                            <label for="add">*</label><br>
+                            <input type="radio" id="divide" name="operator"  value="/">
+                            <label for="add">/</label><br>
+                        </form>
+                        
+                    </div>
+                </div>
+
+                    <div> <!--div for result of input2 -->            
+                        <form onsubmit="return false;">
+                            <label for="box2">Value:</label>
+                            <input type="number" id="input2" placeholder="Enter Number Here">
+                        </form>
+                    </div>
+                </div>
+                <button id="calculate" type="button"  onclick="calculate()"> =</button> <!--should run calculate function-->
+                    
+                
+
+            
+            <div id="clear"> <!--clear calculator -->
+                <input type ='button' value="Reset" onclick="clearCalculator()">  <!--clear input values and operator-->
+            </div>
+            <!-- <button id="random" type="button" onclick="random()">Random Integers</button>  autopopulate input values -->
+    </div>
+    <script src="index.js"></script>
+</body> 
+</html>
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>CSS Transitions</title>
+   <style>
+.box {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  text-align: center;
+  margin-left: 48vw;
+}
+div {
+    animation-name: movedown;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
+
+    @keyframes movedown {
+        from {margin-top: 0%; }
+        to {margin-top: 50%; }
+        from {background-color: red;}
+        to {background-color: blue;}
+    }
+   </style>
+</head>
+<body>
+   <div class="box">Hello</div>
+</body>
+</html
