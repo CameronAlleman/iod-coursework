@@ -1,0 +1,97 @@
+.heading {
+    text-align: center;
+    font-size: 60px;
+    border: dotted blue 10px;
+    background-color: teal;
+}
+
+
+.calculatorbody {
+    display: flex;    
+    flex-direction: column;
+    height: 800px;
+    background-color: gray;
+
+}
+.result {
+    text-align: center;
+    justify-content: center;
+    height: 80px;
+    font-size: 60px;
+    background-color: rgb(42, 250, 239);
+
+    border:dashed red 5px;
+}
+
+.input1 {
+    height: 40px;
+    margin-top: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#num1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.input2 {  
+        height: 40px;
+        margin-top: 40px;
+        font-size: 30px;
+        text-align: center;
+}
+
+#num2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.operators {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:50px;
+    margin-right: 50px;
+
+}
+
+.add {
+    font-size:40px;
+    background-color: white;
+    color: black;
+    border: solid black 10px;
+    margin-top: 40px;
+    background-color: rgb(254, 254, 113);
+
+}
+
+.subtract {
+    font-size:40px;
+    background-color: white;
+    color: black;
+    border: solid black 10px;
+    margin-top: 40px;
+    background-color: rgb(254, 254, 113);
+
+}
+
+.multiply {
+    font-size:40px;
+    background-color: white;
+    color: black;
+    border: solid black 10px;
+    margin-top: 40px;
+    background-color: rgb(254, 254, 113);
+}
+
+.divide {
+    font-size:40px;
+    background-color: white;
+    color: black;
+    border: solid black 10px;
+    margin-top: 40px;
+    background-color: rgb(254, 254, 113);
+}
+
