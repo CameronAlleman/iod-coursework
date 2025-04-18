@@ -1,0 +1,33 @@
+import { useContext } from "react";
+import { NavLink } from "react-router-dom";
+import { MyThemeContext } from "../Context/ThemeContext";
+
+export default function NavBar() {
+  const { theme } = useContext(MyThemeContext);
+
+  return (
+    <nav
+      className="NavBar"
+      style={{ backgroundColor: theme.background, color: theme.foreground }}
+    >
+      <ul className="menu">
+        <li>
+          <NavLink to="/HomePage">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/loginform">loginform</NavLink>
+        </li>
+        <li>
+          <NavLink to="/posts">Posts</NavLink>
+        </li>
+        <li>
+          <NavLink to="/BitcoinRates">BitCoin-Rates</NavLink>
+        </li>
+        <li>
+          <NavLink to="/PageNotFound">Page-Not-Found</NavLink>
+        </li>
+      </ul>{" "}
+      {/* ++ Add another page with route and component */}
+    </nav>
+  );
+}
